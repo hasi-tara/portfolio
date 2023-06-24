@@ -6,7 +6,10 @@
     font-family: sans-serif;
     color:rgb(184, 190, 241); 
   }
-
+  
+@font-face {
+  font-family: 'times-sanse';
+  src: url('/fonts/Times\ Sans.ttf');}
 .container{
     display: flex;
     flex-direction: column;
@@ -55,12 +58,12 @@
   .active {
     background-color: #00205c;
     color: white;
-    font-family: "Times Sans";
+    font-family: "times-sanse";
     letter-spacing: 2px;}
 
 .profile__bold{
     font-size: 5.2rem;
-    font-family: 'Times Sans';
+    font-family: 'times-sanse';
     color: aliceblue;
     letter-spacing: 2.8px;
 }
@@ -213,7 +216,7 @@
 }
 .experiences__skill-name p{
     
-    font-family: 'Times Sans';
+    font-family: 'times-sanse';
 
 }
 .experiences__skil p{
@@ -365,7 +368,7 @@
     }
     .active2{
     color: white;
-    font-family: "Times Sans";
+    font-family: "times-sanse";
     letter-spacing: 2px;
     font-size: 4rem;
     padding: 4px;
