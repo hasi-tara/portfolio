@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: sans-serif;
+    color:rgb(184, 190, 241); 
+  }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 560px;
+     background-color:rgb(6, 10, 44);    
+}
+.menu{
+    width: 100%;
+  }
+  .menu__topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+
+  .menu__topnav #myLinks {
+    display: none;
+  }
+
+  .menu__topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.7rem;
+    display: block;
+  }
+
+  .menu__topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .menu__topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .menu-desktop{
+    display: none;
+  }
+
+  .active {
+    background-color: #00205c;
+    color: white;
+    font-family: "Times Sans";
+    letter-spacing: 2px;}
+
+.profile__bold{
+    font-size: 5.2rem;
+    font-family: 'Times Sans';
+    color: aliceblue;
+    letter-spacing: 2.8px;
+}
+.profile__ligth{
+    font-size: 2.8rem;
+}
+
+.btn{
+    cursor: pointer;
+    color: white;
+    font-size: 1.6rem;
+    margin: 12px;
+    padding: 12px;
+    border-radius: 4px;
+    border: 0px;
+    background-image: linear-gradient(to left, rgb(70, 0, 128),#3395fd);
+
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.profile__frame{
+    border:solid 8px mediumaquamarine;
+    border-radius: 8px;
+    max-width: 50%;
+    min-width: 200px;
+    height: auto;
+    margin: 28px 24px 28px 0;
+
+}
+.profile__frames{
+    border:solid 8px mediumaquamarine;
+    border-radius: 8px;
+    max-width: 50%;
+    min-width: 200px;
+    height: auto;
+    margin: 28px 24px 28px 0;
+
+}
+.profile__avatar{
+    border: solid 1px mediumaquamarine;
+    width: 100%;
+    border-radius: 8px;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+.profile__about{
+    max-width: 320px;
+    min-width:50% ;
+    font-size: 1.8rem;
+    margin:24px;
+    text-align: left;
+    line-height: 28px;
+}
+.about__desktop{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.profile__cta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.social-links i{
+    font-size: 3.2rem;
+    justify-content: space-between;
+    margin: 28px 16px;
+    cursor: pointer;
+}
+.social-links2{
+   display: none;
+}
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.project__about{
+    max-width: 320px;
+    min-width:50% ;
+    font-size: 1.8rem;
+    margin:24px;
+    text-align: left;
+    line-height: 28px;
+}
+.part1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.portfolio h3{
+    font-size: 2.3rem;
+}
+.experiences{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+}
+.experience-desktop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.experiences__skil{
+    margin: 48px  0 0 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border:solid 4px mediumaquamarine;
+    border-radius: 8px;
+    max-width: 80%;
+    min-width: 280px;
+    height: 320px;
+    box-shadow: 0 0 16px rgb(179, 0, 179);
+    animation-name: myanimation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes myanimation {
+    from {background-color:rgb(6, 10, 44); }
+    to {background-color:rgb(32, 6, 44);}
+}
+
+
+.experiences__skill-name{
+    margin:16px 0;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    color:rgb(184, 190, 241); 
+}
+.experiences__skill-name p{
+    
+    font-family: 'Times Sans';
+
+}
+.experiences__skil p{
+    font-size: 1.7rem;
+    padding: 16px;
+    text-align: center;
+    line-height: 24px;
+}
+
+
+  @keyframes lights {
+    0% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+    30% { 
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    40% { 
+      color: hsl(230, 100%, 95%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 90%, 0.5),
+        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    70% {
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    100% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+  }
+  
+  
+  h2 {
+    margin: 20px;
+    font-size: 3.5rem;
+    font-weight: 300;
+    animation: lights 5s 750ms linear infinite;
+  }
+
+  .contact-form {
+    max-width: 500px;
+    margin: 10px 10px 50px 10px;
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    color: #00205c;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    color: #00205c;
+    resize: none;
+  }
+  
+  button[type="submit"] {
+    background-color: #00205c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #185adb;
+  }
+  
+
+  @media (min-width: 1024px) {
+    .container{
+        max-width: 100%;
+    }
+    h2{
+        font-size: 4.4rem;
+        margin: 120px 0 0  0;
+
+        padding-bottom: 20px;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-desktop{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        padding: 0 44px;
+       
+    }
+    .menu-desktop a{text-decoration: none;
+    font-size: 2rem;
+    border: solid 1px;
+    padding: 8px;
+    border-radius: 12px;
+    margin: 24px 0;
+    cursor: pointer;
+    }
+    .active2{
+    color: white;
+    font-family: "Times Sans";
+    letter-spacing: 2px;
+    font-size: 4rem;
+    padding: 4px;
+    border-radius: 12px;
+    margin: 12px 0;
+    }
+    .about__desktop{display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.profile__ligth{
+    font-size: 4rem;
+    font-weight: bold;
+    padding:40px 0;
+    color: aqua;
+    transition: 2s;
+    
+}
+.profile__bold{
+    font-size: 8.2rem;
+padding: 30px 0;
+}
+.profile__frame{
+    max-width: 40%;
+   height: 100%;
+    margin: 28px 24px 28px 0;
+
+}
+.profile__about{
+    font-size: 2.2rem;
+    width: 100%;
+}
+.social-links {
+display: none;
+}
+.social-links2{
+    display: flex;
+}
+.social-links2 i{
+    font-size: 3.2rem;
+    justify-content: space-between;
+    margin: 28px 28px;
+    cursor: pointer;
+}
+.portfolio{
+    flex-direction: row;
+    padding:0 20px;
+    margin: 0 20px;
+}
+.project__about{
+    font-size: 2.2rem;
+    line-height: 36px;
+    max-width: none;
+    min-width:none ;
+    width: 20px;
+   padding: 0 40px;
+}
+.profile__frames{
+    max-width: 100%;
+    margin:20px;
+}
+.experiences{
+    max-width: 30%;
+    width: none;
+    min-width: 200px;
+}
+.experiences__skil{
+    height: 400px;
+    max-width: 72%;
+    min-width: 300px;
+    margin:32px 20px;
+}
+
+.experiences__skill-name{
+    width: 94%;
+}
+
+.experiences__skil p{
+    font-size: 2.2rem;
+    text-align: center;
+}
+.experience-desktop{
+    flex-direction: row;
+    
+}
+
+.contact-form {
+    width: 800px;
+  }
+  
+  
+  .form-group {
+    margin-bottom: 40px;
+  }
+  
+  label {
+    font-size: 2rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 3rem;
+    padding: 10px;
+    color: #00205c;
+  }
+  
+  button[type="submit"] {
+    width: 50%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #185adb;
+  }
+  .btn{
+    font-size: 2.4rem;
+    padding: 20px;
+    border-radius: 8px;
+}
+  }
+  @media (min-width: 1200px){
+    .experiences__skil{
+        margin:32px 50px;
+    }
+  }
